@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tenant Run For KTG 2026</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    padding:20px;
+}
+
+.container{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    color:#000;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{text-align:center;margin-bottom:5px;}
+p{text-align:center;font-size:14px;margin-bottom:15px;}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#2c5364;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{background:#203a43;}
+
+.total{
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+    margin-top:10px;
+    text-align:center;
+}
+
+.qris{
+    display:none;
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    border:2px dashed #ccc;
+    border-radius:10px;
+    background:#f9f9f9;
+}
+
+.qris img{
+    width:220px;
+    margin-top:10px;
+}
+
+.note{
+    font-size:13px;
+    color:red;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    font-size:12px;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pendaftaran Tenant</h1>
+<p>Run For KTG 2026</p>
+
+<form>
+
+<label>Nama Tenant</label>
+<input type="text" id="tenant" required>
+
+<label>Nama Pemilik</label>
+<input type="text" id="owner" required>
+
+<label>No WhatsApp</label>
+<input type="tel" id="wa" required>
+
+<label>Jenis Usaha</label>
+<select id="jenis">
+<option value="">-- Pilih --</option>
+<option>Makanan</option>
+<option>Minuman</option>
+<option>Fashion</option>
+<option>Lainnya</option>
+</select>
+
+<label>Pilih Paket Tenant</label>
+<select id="paket" onchange="updateTotal()" required>
+<option value="">-- Pilih Paket --</option>
+<option value="300000">Standar - Rp300.000</option>
+<option value="500000">Premium - Rp500.000</option>
+<option value="800000">VIP - Rp800.000</option>
+</select>
+
+<div class="total" id="total">Total: Rp0</div>
+
+<div class="qris" id="qrisBox">
+<b>Pembayaran QRIS SRC</b><br>
+
+<img src="<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tenant Run For KTG 2026</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    padding:20px;
+}
+
+.container{
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    color:#000;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1{text-align:center;margin-bottom:5px;}
+p{text-align:center;font-size:14px;margin-bottom:15px;}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#2c5364;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{background:#203a43;}
+
+.total{
+    font-size:18px;
+    font-weight:bold;
+    color:green;
+    margin-top:10px;
+    text-align:center;
+}
+
+.qris{
+    display:none;
+    text-align:center;
+    margin-top:20px;
+    padding:15px;
+    border:2px dashed #ccc;
+    border-radius:10px;
+    background:#f9f9f9;
+}
+
+.qris img{
+    width:220px;
+    margin-top:10px;
+}
+
+.note{
+    font-size:13px;
+    color:red;
+    margin-top:10px;
+}
+
+.footer{
+    text-align:center;
+    font-size:12px;
+    margin-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pendaftaran Tenant</h1>
+<p>Run For KTG 2026</p>
+
+<form>
+
+<label>Nama Tenant</label>
+<input type="text" id="tenant" required>
+
+<label>Nama Pemilik</label>
+<input type="text" id="owner" required>
+
+<label>No WhatsApp</label>
+<input type="tel" id="wa" required>
+
+<label>Jenis Usaha</label>
+<select id="jenis">
+<option value="">-- Pilih --</option>
+<option>Makanan</option>
+<option>Minuman</option>
+<option>Fashion</option>
+<option>Lainnya</option>
+</select>
+
+<label>Pilih Paket Tenant</label>
+<select id="paket" onchange="updateTotal()" required>
+<option value="">-- Pilih Paket --</option>
+<option value="300000">Standar - Rp300.000</option>
+<option value="500000">Premium - Rp500.000</option>
+<option value="800000">VIP - Rp800.000</option>
+</select>
+
+<div class="total" id="total">Total: Rp0</div>
+
+<div class="qris" id="qrisBox">
+<b>Pembayaran QRIS SRC</b><br>
+
+<img src="<img src="qris.png">">
+
+<p><b>NMID: ID1037809843518</b></p>
+
+<div class="note">
+Bayar sesuai nominal di atas, lalu upload bukti pembayaran
+</div>
+</div>
+
+<label>Upload Bukti Pembayaran</label>
+<input type="file" id="bukti" required>
+
+<button type="button" onclick="kirimWA()">Kirim Pendaftaran</button>
+
+</form>
+
+<div class="footer">
+© 2026 Run For KTG Event
+</div>
+
+</div>
+
+<script>
+function rupiah(angka){
+    return new Intl.NumberFormat("id-ID").format(angka);
+}
+
+function updateTotal(){
+    let paket = document.getElementById("paket").value;
+
+    if(paket !== ""){
+        document.getElementById("total").innerText = "Total: Rp" + rupiah(paket);
+        document.getElementById("qrisBox").style.display = "block";
+    }
+}
+
+function kirimWA(){
+
+    let tenant = document.getElementById("tenant").value;
+    let owner = document.getElementById("owner").value;
+    let wa = document.getElementById("wa").value;
+    let jenis = document.getElementById("jenis").value;
+    let paket = document.getElementById("paket").value;
+
+    if(tenant=="" || owner=="" || wa=="" || paket==""){
+        alert("Lengkapi data dulu!");
+        return;
+    }
+
+    let pesan = `*PENDAFTARAN TENANT RUN FOR KTG 2026*%0A
+Nama Tenant: ${tenant}%0A
+Nama Pemilik: ${owner}%0A
+No WA: ${wa}%0A
+Jenis Usaha: ${jenis}%0A
+Total Bayar: Rp${paket}%0A
+Metode: QRIS SRC`;
+
+    let url = "https://wa.me/6289673268436?text=" + pesan;
+
+    window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>">
+
+<p><b>NMID: ID1037809843518</b></p>
+
+<div class="note">
+Bayar sesuai nominal di atas, lalu upload bukti pembayaran
+</div>
+</div>
+
+<label>Upload Bukti Pembayaran</label>
+<input type="file" id="bukti" required>
+
+<button type="button" onclick="kirimWA()">Kirim Pendaftaran</button>
+
+</form>
+
+<div class="footer">
+© 2026 Run For KTG Event
+</div>
+
+</div>
+
+<script>
+function rupiah(angka){
+    return new Intl.NumberFormat("id-ID").format(angka);
+}
+
+function updateTotal(){
+    let paket = document.getElementById("paket").value;
+
+    if(paket !== ""){
+        document.getElementById("total").innerText = "Total: Rp" + rupiah(paket);
+        document.getElementById("qrisBox").style.display = "block";
+    }
+}
+
+function kirimWA(){
+
+    let tenant = document.getElementById("tenant").value;
+    let owner = document.getElementById("owner").value;
+    let wa = document.getElementById("wa").value;
+    let jenis = document.getElementById("jenis").value;
+    let paket = document.getElementById("paket").value;
+
+    if(tenant=="" || owner=="" || wa=="" || paket==""){
+        alert("Lengkapi data dulu!");
+        return;
+    }
+
+    let pesan = `*PENDAFTARAN TENANT RUN FOR KTG 2026*%0A
+Nama Tenant: ${tenant}%0A
+Nama Pemilik: ${owner}%0A
+No WA: ${wa}%0A
+Jenis Usaha: ${jenis}%0A
+Total Bayar: Rp${paket}%0A
+Metode: QRIS SRC`;
+
+    let url = "https://wa.me/628217003017?text=" + pesan;
+
+    window.open(url,"_blank");
+}
+</script>
+
+</body>
+</html>
