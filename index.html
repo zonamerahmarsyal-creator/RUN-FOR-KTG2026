@@ -10,10 +10,22 @@
 
 body{
     background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:#fff;
     padding:20px;
 }
 
+/* BANNER */
+.banner{
+    max-width:650px;
+    margin:auto;
+    margin-bottom:15px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* FORM */
 .container{
     max-width:650px;
     margin:auto;
@@ -94,6 +106,12 @@ button:hover{background:#203a43;}
 
 <body>
 
+<!-- BANNER -->
+<div class="banner">
+    <!-- GANTI banner.png dengan banner kamu -->
+    <img src="banner.png">
+</div>
+
 <div class="container">
 
 <h1>Pendaftaran Tenant</h1>
@@ -122,9 +140,9 @@ button:hover{background:#203a43;}
 <label>Pilih Paket Tenant</label>
 <select id="paket" onchange="updateTotal()" required>
 <option value="">-- Pilih Paket --</option>
-<option value="300000">Standar - Rp300.000</option>
-<option value="500000">Premium - Rp500.000</option>
-<option value="800000">VIP - Rp800.000</option>
+<option value="300000">Standar - Rp500.000</option>
+<option value="500000">Premium - Rp700.000</option>
+<option value="800000">VIP - Rp900.000</option>
 </select>
 
 <div class="total" id="total">Total: Rp0</div>
